@@ -5,7 +5,6 @@ En python on utilise des 'indentations'. C'est les espaces ou les tabs en début
 https://www.docstring.fr/glossaire/indentation/ 
 
 
-
 ### Type de données 
 Les types permettent de définir le truc que l'on manipule. 
 | Type de Donné   |      Type python      |  Description | Exemple d'utilisation
@@ -21,6 +20,11 @@ truc=2.3
 print(type(truc))
 ```
 Python va nous indiquer `<class 'float'>` car truc est un nombre flottant.
+
+### Les opérations 
+![image](https://github.com/thegostisdead/python-course/assets/25646890/7ae2dcf0-ef78-4c31-929d-a5333c801194)
+![image](https://github.com/thegostisdead/python-course/assets/25646890/c1f61cbe-4d8c-4d23-bf40-ba9214eeac78)
+
 
 ### Les boucles
 Dans beaucoup de cas on vas avoir besoin de faire plusieurs foi une opération. Par exemple pour faire de l'échantillonnage, ou des sommes.
@@ -94,7 +98,7 @@ def ma_super_fonction(param1, param2):
   print(param2)
 ```
 
-Une fonction peut renvoyer une valeur. L'instruction `return` permet de dire : "Renvoyer la valeur ..."
+Une fonction peut renvoyer une valeur. L'instruction `return` permet de dire : "Renvoyer la valeur ..."      
 Exemple : 
 
 ```python
@@ -108,14 +112,24 @@ print(toto)
 ```
 9
 
-
-
+![image](https://github.com/thegostisdead/python-course/assets/25646890/cdde1268-77a1-48e2-888d-56c969104b62)
 
 
 ## Pour faire des maths
+En python généralement on utilise des bibliothèques (librairies en anglais). Ce sont des gros fichiers pythons dans lequelle il y a plein de fonctions que l'on peut utiliser.
+Les libs les plus couraments utilisés sont : 
+* Numpy -> contient plein d'outils mathématiques
+* Matplotlib -> pour faire des graphiques
+* Pandas -> pour manipuler des données
 
 
 ## Faire des graphiques
+https://www.w3schools.com/python/matplotlib_plotting.asp 
 
-
+## Lire un fichier 
+Il y a plusieurs méthodes, en voici une :
+```python
+with open('readme.txt') as f:
+    lines = f.readlines()
+```
 
